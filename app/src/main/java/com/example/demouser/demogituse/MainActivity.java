@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity
         else if (id == R.id.nav_checklist) {
 
         } else if (id == R.id.nav_journal) {
-
+            displayFragment(new JournalFragment());
         } else if (id == R.id.nav_gratitudeAndAffirmations) {
 
         } else if (id == R.id.nav_resources) {
