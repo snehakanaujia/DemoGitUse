@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_resources) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_gratitudeAndAffirmations) {
 
         }
 
