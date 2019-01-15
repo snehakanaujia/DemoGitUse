@@ -11,8 +11,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoFragment"
-        >
+    tools:context=".InfoFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -39,26 +38,27 @@
         android:singleLine="false"
         android:text="@string/this_is_some_information_about_physical_health_and_how_to_take_care_of_it" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="128dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="172dp"
-        android:text="@string/emotional"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="155dp"
+            android:text="@string/emotional"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="181dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="234dp"
-        android:singleLine="false"
-        android:text="Some Info. about Emotional health insert insert yadda ydaa good stuff" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="199dp"
+            android:singleLine="false"
+            android:text="@string/some_info_about_emotional_health_insert_insert_yadda_ydaa_good_stuff" />
 
         <TextView
             android:id="@+id/textView11"
@@ -66,10 +66,44 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginBottom="159dp"
-            android:text="Mental"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="213dp"
+            android:text="@string/mental"
             android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="181dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="155dp"
+            android:singleLine="false"
+            android:text="This is some information on taking care of mental health " />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="112dp"
+            android:text="Spiritual"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="182dp"
+            android:layout_height="56dp"
+            android:layout_alignEnd="@+id/textView8"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-36dp"
+            android:layout_marginBottom="30dp"
+            android:singleLine="false"
+            android:text="Some information on spiritual health, taking a step back and shit" />
 
 
     </RelativeLayout>
