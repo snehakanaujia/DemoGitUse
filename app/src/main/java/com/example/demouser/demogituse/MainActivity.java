@@ -3,6 +3,7 @@ package com.example.demouser.demogituse;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -89,7 +91,7 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id == R.id.nav_info)
         {
-
+           // Log.i("Menu Item Clicked: ", "Home");
         }
         else if (id == R.id.nav_checklist) {
 
