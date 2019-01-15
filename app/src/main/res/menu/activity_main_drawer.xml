@@ -9,21 +9,25 @@
             android:icon="@drawable/baseline_home_black_18dp"
             android:title="Home" />
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_info"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Info" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_resources"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Resources" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_checklist"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Checklist" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_journal"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Journal" />
+        <item
+            android:id="@+id/nav_gratitudeAndAffirmations"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Gratitude and Affirmations" />
     </group>
 
     <item android:title="Communicate">
