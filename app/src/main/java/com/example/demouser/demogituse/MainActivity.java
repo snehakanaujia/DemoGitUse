@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
             displayFragment(new InfoFragment());
         }
         else if (id == R.id.nav_checklist) {
-
+            displayFragment(new ChecklistFragment());
         } else if (id == R.id.nav_journal) {
             displayFragment(new JournalFragment());
         } else if (id == R.id.nav_gratitudeAndAffirmations) {
