@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChecklistFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/allan"
+        android:text="Welcome to the Overall Health checklist"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/PhysicalCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmotionalCheckBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="-72dp"
+        android:text="Physical Health" />
+
+    <CheckBox
+        android:id="@+id/EmotionalCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="135dp"
+        android:text="Emotional Health" />
+
+    <CheckBox
+        android:id="@+id/SpiritualCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="176dp"
+        android:text="Spiritual Health" />
+
+    <CheckBox
+        android:id="@+id/MentalCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:text="Mental Health" />
+
+</RelativeLayout>
