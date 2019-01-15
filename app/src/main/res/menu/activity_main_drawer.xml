@@ -10,19 +10,19 @@
             android:title="Home" />
         <item
             android:id="@+id/nav_info"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/baseline_info_black_18dp"
             android:title="Info" />
         <item
             android:id="@+id/nav_resources"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/baseline_bookmarks_black_18dp"
             android:title="Resources" />
         <item
             android:id="@+id/nav_checklist"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baseline_list_alt_black_18dp"
             android:title="Checklist" />
         <item
             android:id="@+id/nav_journal"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/baseline_edit_black_18dp"
             android:title="Journal" />
         <item
             android:id="@+id/nav_gratitudeAndAffirmations"
@@ -30,17 +30,17 @@
             android:title="Gratitude and Affirmations" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
 
 </menu>
