@@ -1,13 +1,17 @@
 package com.example.demouser.demogituse;
 
+import android.arch.lifecycle.Observer;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,27 +29,43 @@ public class JournalFragment extends Fragment {
 
     public List<String> journalRecord = new ArrayList<>();
     private Button saveButton;
+    private EditText jEntry;
+    private RecordDatabase recordDatabase;
+    private RecordRepository recordRepository;
+    private Record record;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        recordRepository = new RecordRepository(getActivity().getApplication());
+
+        recordRepository.getRecords().observe(this,
+                new Observer<List<Record>>() {
+                    @Override
+                    public void onChanged(@Nullable List<Record> records) {
+                        Toast.makeText(getActivity().getApplicationContext(), records.indexOf(0), Toast.LENGTH_LONG);
+                    }
+                });
 
         getActivity().setTitle("Journal");
 
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View journalView = inflater.inflate(R.layout.fragment_journal, container, false);
 
+        jEntry = journalView.findViewById(R.id.journalEntry);
         saveButton = journalView.findViewById(R.id.button);
         saveButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
+                record = new Record(jEntry.getText().toString());
+                recordRepository.insert(record);
 
 
             }
@@ -53,13 +73,5 @@ public class JournalFragment extends Fragment {
 
         return journalView;
     }
-
-    /*
-    EditText edText1 = (EditText) findViewById(R.id.editText1);
-
-edText1.setInputType(InputType.TYPE_CLASS_TEXT);
-
-String str = edText1.getText().toString();
-     */
 
 }
