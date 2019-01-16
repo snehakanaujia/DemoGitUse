@@ -27,8 +27,7 @@ public class InfoFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         getActivity().setTitle("Information Page");
-
-
+        
     }
 
     @Override
