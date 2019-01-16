@@ -7,6 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 ///**
@@ -19,18 +23,43 @@ import android.view.ViewGroup;
 // */
 public class JournalFragment extends Fragment {
 
+    public List<String> journalRecord = new ArrayList<>();
+    private Button saveButton;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getActivity().setTitle("Journal");
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_journal, container, false);
+        View journalView = inflater.inflate(R.layout.fragment_journal, container, false);
+
+        saveButton = journalView.findViewById(R.id.button);
+        saveButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+
+
+            }
+        });
+
+        return journalView;
     }
+
+    /*
+    EditText edText1 = (EditText) findViewById(R.id.editText1);
+
+edText1.setInputType(InputType.TYPE_CLASS_TEXT);
+
+String str = edText1.getText().toString();
+     */
 
 }

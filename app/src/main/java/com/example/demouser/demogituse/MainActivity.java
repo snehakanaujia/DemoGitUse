@@ -79,11 +79,9 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
         }
-        else if (id == R.id.nav_info)
-        {
+        else if (id == R.id.nav_info) {
             displayFragment(new InfoFragment());
-        }
-        else if (id == R.id.nav_checklist) {
+        } else if (id == R.id.nav_checklist) {
             displayFragment(new ChecklistFragment());
         } else if (id == R.id.nav_journal) {
             displayFragment(new JournalFragment());
