@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -26,28 +28,17 @@ public class MainActivity extends AppCompatActivity
     CheckBox physical, spiritual, mental, emotional;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
+        emotional = (CheckBox) findViewById(R.id.EmotionalCheckBox);
+        spiritual = (CheckBox) findViewById(R.id.SpiritualCheckBox);
+        mental = (CheckBox) findViewById(R.id.MentalCheckBox);
 
-        emotional = (CheckBox)findViewById(R.id.EmotionalCheckBox);
-        spiritual = (CheckBox)findViewById(R.id.SpiritualCheckBox);
-        mental = (CheckBox)findViewById(R.id.MentalCheckBox);
-
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -94,19 +85,15 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item)
-    {
+    public boolean onNavigationItemSelected(MenuItem item) {
 
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
             displayFragment(new WelcomeFragment());
-        }
-        else if (id == R.id.nav_info)
-        {
+        } else if (id == R.id.nav_info) {
             displayFragment(new InfoFragment());
-        }
-        else if (id == R.id.nav_checklist) {
+        } else if (id == R.id.nav_checklist) {
             displayFragment(new ChecklistFragment());
         } else if (id == R.id.nav_journal) {
             displayFragment(new JournalFragment());
@@ -122,54 +109,46 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void physicalCheckBx()
-    {
-        pB = (ProgressBar)findViewById(R.id.progressBar);
-        physical = (CheckBox)findViewById(R.id.PhysicalCheckBox);
+    public void physicalCheckBx() {
+        pB = (ProgressBar) findViewById(R.id.progressBar);
+        physical = (CheckBox) findViewById(R.id.PhysicalCheckBox);
 
-        physical.setOnClickListener(new View.OnClickListener(){
+        physical.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 pB.setProgress(10);
             }
         });
     }
 
-    public void emotionalCheckBx()
-    {
+    public void emotionalCheckBx() {
         pB = (ProgressBar) findViewById(R.id.progressBar);
-        emotional = (CheckBox)findViewById(R.id.EmotionalCheckBox);
+        emotional = (CheckBox) findViewById(R.id.EmotionalCheckBox);
 
-        emotional.setOnClickListener(new View.OnClickListener(){
+        emotional.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 pB.setProgress(10);
             }
         });
     }
 
-    public void spiritualCheckBx()
-    {
+    public void spiritualCheckBx() {
         pB = (ProgressBar) findViewById(R.id.progressBar);
-        spiritual = (CheckBox)findViewById(R.id.SpiritualCheckBox);
+        spiritual = (CheckBox) findViewById(R.id.SpiritualCheckBox);
 
-        emotional.setOnClickListener(new View.OnClickListener()
-        {
+        emotional.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 pB.setProgress(10);
             }
         });
 
     }
 
-    public void mentalCheckBx()
-    {
+    public void mentalCheckBx() {
         pB = (ProgressBar) findViewById(R.id.progressBar);
-        mental = (CheckBox)findViewById(R.id.MentalCheckBox);
+        mental = (CheckBox) findViewById(R.id.MentalCheckBox);
 
         mental.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.N)
@@ -179,5 +158,11 @@ public class MainActivity extends AppCompatActivity
                 pB.setProgress(10, true);
             }
         });
+    }
+
+    private void displayFragment(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frame, fragment);
+        fragmentTransaction.commit();
     }
 }
