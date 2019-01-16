@@ -1,12 +1,17 @@
 package com.example.demouser.demogituse;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.ProgressBar;
 
 
 /**
@@ -17,7 +22,8 @@ import android.view.ViewGroup;
  * Use the {@link ChecklistFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ChecklistFragment extends Fragment {
+public class ChecklistFragment extends Fragment
+{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -28,8 +34,11 @@ public class ChecklistFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    ProgressBar pB;
+    CheckBox physical, spiritual, mental, emotional;
 
-    public ChecklistFragment() {
+    public ChecklistFragment()
+    {
         // Required empty public constructor
     }
 
@@ -42,7 +51,8 @@ public class ChecklistFragment extends Fragment {
      * @return A new instance of fragment ChecklistFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ChecklistFragment newInstance(String param1, String param2) {
+    public static ChecklistFragment newInstance(String param1, String param2)
+    {
         ChecklistFragment fragment = new ChecklistFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -52,23 +62,34 @@ public class ChecklistFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_checklist, container, false);
+
+        View checklistView = inflater.inflate(R.layout.fragment_checklist, container, false);
+        physicalCheckBx(checklistView);
+        emotionalCheckBx(checklistView);
+        spiritualCheckBx(checklistView);
+        mentalCheckBx(checklistView);
+        return checklistView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
+    public void onButtonPressed(Uri uri)
+    {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
         }
@@ -104,5 +125,66 @@ public class ChecklistFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public void physicalCheckBx(View physicalView)
+    {
+        pB = physicalView.findViewById(R.id.PhysicalCheckBox);
+        physical = (CheckBox)physicalView.findViewById(R.id.PhysicalCheckBox);
+
+        physical.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                pB.setProgress(25);
+            }
+        });
+    }
+
+    public void emotionalCheckBx(View emotionalView)
+    {
+        pB = emotionalView.findViewById(R.id.progressBar);
+        emotional = (CheckBox)emotionalView.findViewById(R.id.EmotionalCheckBox);
+
+        emotional.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                pB.setProgress(25);
+            }
+        });
+    }
+
+    public void spiritualCheckBx(View spiritualView)
+    {
+        pB = spiritualView.findViewById(R.id.progressBar);
+        spiritual = (CheckBox)spiritualView.findViewById(R.id.SpiritualCheckBox);
+
+        emotional.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                pB.setProgress(25);
+            }
+        });
+
+    }
+
+    public void mentalCheckBx(View mentalView)
+    {
+        pB = mentalView.findViewById(R.id.progressBar);
+        mental = mentalView.findViewById(R.id.MentalCheckBox);
+
+        mental.setOnClickListener(new View.OnClickListener()
+        {
+            @TargetApi(Build.VERSION_CODES.N)
+            @RequiresApi(api = Build.VERSION_CODES.N)
+            @Override
+            public void onClick(View v)
+            {
+                pB.setProgress(25, true);
+            }
+        });
     }
 }
