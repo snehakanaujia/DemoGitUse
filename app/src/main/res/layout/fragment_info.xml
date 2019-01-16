@@ -26,17 +26,17 @@
         android:text="@string/physical"
         android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/editText2"
-        android:layout_width="185dp"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="61dp"
-        android:ems="10"
-        android:singleLine="false"
-        android:text="@string/this_is_some_information_about_physical_health_and_how_to_take_care_of_it" />
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="359dp"
+            android:layout_height="99dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="55dp"
+            android:ems="10"
+            android:singleLine="false"
+            android:text="Some possible ways to take care of physical health is staying hydrated (repetitive advice, but useful!), getting a good amount of sleep (at least 5! Looking at you, college students), and keeping yourself physically active (a quick walk, or doing exercises found online/recommended to you by a physician)" />
 
         <TextView
             android:id="@+id/textView8"
@@ -44,21 +44,21 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/textView6"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="-3dp"
-            android:layout_marginTop="155dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="160dp"
             android:text="@string/emotional"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="181dp"
+            android:layout_width="354dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="199dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="189dp"
             android:singleLine="false"
-            android:text="@string/some_info_about_emotional_health_insert_insert_yadda_ydaa_good_stuff" />
+            android:text="Being emotionally healthy means managing and being mindful of your emotions, good or bad! Purposely trying to be aware of your emotions (and the why's of it) can help you understand and manage them in the future. Taking the time to balance fulfilling responsibilities with things you enjoy and connecting with/meeting other people can make all the difference! (Humans are primarily social creatures...)" />
 
         <TextView
             android:id="@+id/textView11"
@@ -66,23 +66,23 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="258dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="247dp"
             android:text="@string/mental"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="181dp"
-            android:layout_height="56dp"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="69dp"
-            android:layout_marginEnd="134dp"
-            android:layout_marginBottom="178dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="150dp"
             android:singleLine="false"
-            android:text="This is some information on taking care of mental health " />
+            android:text="If you have medication, take them! If you have a therapist, usually listen to them! The power of having someone to talk/vent to about really anything is amazing, and can really unmess your head. Ask for help when you need it - even islands aren't completely self-sufficient. Take care of your brain!" />
 
         <TextView
             android:id="@+id/textView14"
@@ -90,20 +90,21 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/textView6"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="112dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="118dp"
             android:text="Spiritual"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="182dp"
-            android:layout_height="56dp"
+            android:layout_width="348dp"
+            android:layout_height="114dp"
             android:layout_alignEnd="@+id/textView8"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="-109dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="-236dp"
+            android:layout_marginBottom="6dp"
             android:singleLine="false"
-            android:text="Some information on spiritual health, taking a step back and shit" />
+            android:text="Take a step back from the hustle and bustle of life. Remind yourself of the place you hold in your community, your nation, the cosmos. You're a living, breathing, self-conscious manifestation of the universe! Isn't that so cool! Reminding yourself of the bigger picture (Universe-wise, religion-wise, or otherwise) can greatly improve spiritual health!" />
 
 
     </RelativeLayout>
