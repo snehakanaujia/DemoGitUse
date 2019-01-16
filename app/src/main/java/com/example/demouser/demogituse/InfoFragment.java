@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 ///**
@@ -25,13 +27,22 @@ public class InfoFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         getActivity().setTitle("Information Page");
+        
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_info, container, false);
+        View view = inflater.inflate(R.layout.fragment_info, container, false);
+
+        WebView myWebView = view.findViewById(R.id.infoweb);
+        myWebView.loadUrl("file:///android_asset/info_page.html");
+
+        myWebView.setWebViewClient(new WebViewClient());
+
+        return view;
+
     }
 
 }
