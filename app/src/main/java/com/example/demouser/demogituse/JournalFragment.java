@@ -19,7 +19,6 @@ import android.view.ViewGroup;
 // */
 public class JournalFragment extends Fragment {
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
