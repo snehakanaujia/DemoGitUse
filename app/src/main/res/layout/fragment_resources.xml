@@ -11,7 +11,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp" />
+        android:layout_marginTop="0dp"
+        android:textSize="8sp" />
 
     <TextView
         android:id="@+id/LinkstoOverall"
@@ -20,33 +21,32 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="144dp"
         android:text="Links for Overall Health"
         android:textAllCaps="false"
         android:textSize="10sp" />
 
     <TextView
         android:id="@+id/greenJuiceLink"
-        android:layout_width="126dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/LinkstoOverall"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="74dp"
-        android:layout_marginTop="161dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="179dp"
         android:autoLink="web"
         android:text="@string/greenJuicelink"
-        android:textSize="8sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/greenJuiceDetoxTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/LinkstoOverall"
+        android:layout_alignStart="@+id/selfCareTag"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="161dp"
-        android:text="Green Juice Detox"
-        android:textSize="8sp" />
+        android:layout_marginTop="178dp"
+        android:text="Green Juice Detox:"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/WelcomeText"
@@ -74,12 +74,11 @@
         android:id="@+id/selfCareTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignEnd="@+id/LinkstoOverall"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginTop="204dp"
         android:text="Self Care Game:"
-        android:textSize="8sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/selfCareGLink"
@@ -87,11 +86,11 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/greenJuiceDetoxTag"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="204dp"
         android:autoLink="web"
         android:text="@string/selfCareGame"
-        android:textSize="8sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/kendallGymTag"
@@ -99,21 +98,113 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/greenJuiceDetoxTag"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="230dp"
         android:text="Kendall Gym Schedule:"
-        android:textSize="8sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/kendallGymLink"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="249dp"
+        android:autoLink="web"
+        android:text="@string/kendallGymLink"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sleepVideoTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="268dp"
+        android:text="Sleep Health:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sleepVideoLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignTop="@+id/sleepVideoTag"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="0dp"
+        android:autoLink="web"
+        android:text="@string/sleepLink"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mentalStretchTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/greenJuiceDetoxTag"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="193dp"
+        android:text="Stretches for mental clarity:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mentalStretchLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="195dp"
         android:autoLink="web"
-        android:text="@string/kendallGymLink"
-        android:textSize="8sp" />
+        android:text="@string/mentalStretch"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sleepScheTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="170dp"
+        android:text="Tips for better sleep schedule:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sleepSchedLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="150dp"
+        android:autoLink="web"
+        android:text="@string/sleepSched"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/nutritionTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="127dp"
+        android:text="Nutrition Playlist: "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/nutritionLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greenJuiceDetoxTag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="92dp"
+        android:autoLink="web"
+        android:text="@string/nutritionLink"
+        android:textSize="12sp" />
 
 </RelativeLayout>
