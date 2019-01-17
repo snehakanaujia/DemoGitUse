@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        displayFragment(new WelcomeFragment());
+
     }
 
     @Override
@@ -78,16 +80,21 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            displayFragment(new WelcomeFragment());
         }
         else if (id == R.id.nav_info) {
             displayFragment(new InfoFragment());
-        } else if (id == R.id.nav_checklist) {
+        }
+        else if (id == R.id.nav_checklist) {
             displayFragment(new ChecklistFragment());
-        } else if (id == R.id.nav_journal) {
+        }
+        else if (id == R.id.nav_journal) {
             displayFragment(new JournalFragment());
-        } else if (id == R.id.nav_gratitudeAndAffirmations) {
+        }
+        else if (id == R.id.nav_gratitudeAndAffirmations) {
 
-        } else if (id == R.id.nav_resources) {
+        }
+        else if (id == R.id.nav_resources) {
 
         }
 
