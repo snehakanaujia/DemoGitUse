@@ -7,9 +7,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="greenJuicelink">https://youtu.be/OuLGnM0O2z8</string>
-    <string name="kendallLink">http://athletics.mtholyoke.edu/documents/kendalldropin.pdf</string>
-    <string name="link3">https://youtu.be/OuLGnM0O2z8</string>
+    <string name="selfCareGame">https://youfeellikeshit.com/</string>
+    <string name="kendallGymLink">http://athletics.mtholyoke.edu/documents/kendalldropin.pdf</string>
     <string name="link4">https://youtu.be/OuLGnM0O2z8</string>
+    <string name="link5">https://youtu.be/OuLGnM0O2z8</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
