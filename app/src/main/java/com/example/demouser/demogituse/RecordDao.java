@@ -10,9 +10,8 @@ import java.util.List;
 
 @Dao
 public interface RecordDao {
-    @Query("SELECT * FROM record_table ")
+    @Query("SELECT * FROM record_table ORDER BY journalEntry_content ASC")
     LiveData<List<Record>> getAll();
-
 
     /*
      * Insert the object in database
