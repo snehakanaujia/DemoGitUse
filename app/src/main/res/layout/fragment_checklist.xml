@@ -7,16 +7,17 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/checklistTitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="499dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="22dp"
-        android:fontFamily="@font/allan"
-        android:text="Welcome to the Overall Health checklist"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:text="Checklist"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="30sp" />
 
     <CheckBox
         android:id="@+id/PhysicalCheckBox"
@@ -61,11 +62,21 @@
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="17dp"
-        android:layout_marginBottom="174dp" />
+        android:layout_marginBottom="199dp" />
+
+    <TextView
+        android:id="@+id/checklistDescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="53dp"
+        android:text="Checklists can help one stay more organized and make meaningful changes in a step by step manner." />
 
 </RelativeLayout>

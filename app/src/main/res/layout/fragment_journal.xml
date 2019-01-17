@@ -10,8 +10,6 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".MainActivity">
-        <!--tools:showIn="@layout/app_bar_main"-->
-
 
         <TextView
             android:id="@+id/journalDescrip"
@@ -47,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="cursive"
-            android:text="JOURNAL"
+            android:text="Journal"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

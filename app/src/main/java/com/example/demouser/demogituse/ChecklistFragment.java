@@ -15,40 +15,29 @@ import android.widget.ProgressBar;
  */
 public class ChecklistFragment extends Fragment
 {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     ProgressBar pB;
     CheckBox physical, spiritual, mental, emotional;
+    Boolean PChecked, SChecked, MChecked, EChecked;
 
     public ChecklistFragment()
     {
-        // Required empty public constructor
+        PChecked = false;
+        SChecked = false;
+        MChecked = false;
+        EChecked = false;
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null)
-        {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-
         View checklistView = inflater.inflate(R.layout.fragment_checklist, container, false);
         physicalCheckBx(checklistView);
         emotionalCheckBx(checklistView);
@@ -71,7 +60,14 @@ public class ChecklistFragment extends Fragment
             @Override
             public void onClick(View view)
             {
-                pB.setProgress(25+pB.getProgress());
+                PChecked = !PChecked;
+                if(PChecked) {
+                    pB.setProgress(pB.getProgress() + 25);
+                }
+                else
+                {
+                    pB.setProgress(pB.getProgress() - 25);
+                }
             }
         });
     }
@@ -90,7 +86,14 @@ public class ChecklistFragment extends Fragment
             @Override
             public void onClick(View view)
             {
-                pB.setProgress(25+pB.getProgress());
+                EChecked = !EChecked;
+                if(EChecked) {
+                    pB.setProgress(pB.getProgress() + 25);
+                }
+                else
+                {
+                    pB.setProgress(pB.getProgress() - 25);
+                }
             }
         });
     }
@@ -109,7 +112,14 @@ public class ChecklistFragment extends Fragment
             @Override
             public void onClick(View view)
             {
-                pB.setProgress(25+pB.getProgress());
+                SChecked = !SChecked;
+                if(SChecked) {
+                    pB.setProgress(pB.getProgress() + 25);
+                }
+                else
+                {
+                    pB.setProgress(pB.getProgress() - 25);
+                }
             }
         });
 
@@ -129,7 +139,14 @@ public class ChecklistFragment extends Fragment
             @Override
             public void onClick(View view)
             {
-                pB.setProgress(25+pB.getProgress());
+                MChecked = !MChecked;
+                if(MChecked) {
+                    pB.setProgress(pB.getProgress() + 25);
+                }
+                else
+                {
+                    pB.setProgress(pB.getProgress() - 25);
+                }
             }
         });
 

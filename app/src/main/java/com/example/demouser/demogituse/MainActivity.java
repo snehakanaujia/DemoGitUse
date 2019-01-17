@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             displayFragment(new JournalFragment());
         }
         else if (id == R.id.nav_gratitudeAndAffirmations) {
-//            displayFragment(new GratitudeAndAffirmationsFragment());
+            displayFragment(new GratitudeAndAffirmationsFragment());
         }
         else if (id == R.id.nav_resources) {
             displayFragment(new ResourcesFragment());
