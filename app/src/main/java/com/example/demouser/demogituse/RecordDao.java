@@ -10,7 +10,7 @@ import java.util.List;
 
 @Dao
 public interface RecordDao {
-    @Query("SELECT * FROM record_table ORDER BY journalEntry_content ASC")
+    @Query("SELECT jEntry_id, journalEntry_content FROM record_table ORDER BY jEntry_id DESC LIMIT 1")
     LiveData<List<Record>> getAll();
 
     /*

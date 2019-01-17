@@ -5,7 +5,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.provider.SyncStateContract;
 
-@Database(entities = { Record.class }, version = 1)
+@Database(entities = { Record.class }, version = 1, exportSchema = false)
 public abstract class RecordDatabase extends RoomDatabase {
 
     public abstract RecordDao getRecordDao();
