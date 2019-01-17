@@ -21,13 +21,15 @@ import java.util.List;
 // * Use the {@link JournalFragment#newInstance} factory method to
 // * create an instance of this fragment.
 // */
-public class JournalFragment extends Fragment {
+public class JournalFragment extends Fragment
+{
 
     public List<String> journalRecord = new ArrayList<>();
     private Button saveButton;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         getActivity().setTitle("Journal");
@@ -36,7 +38,8 @@ public class JournalFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+                             Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
         View journalView = inflater.inflate(R.layout.fragment_journal, container, false);
 
