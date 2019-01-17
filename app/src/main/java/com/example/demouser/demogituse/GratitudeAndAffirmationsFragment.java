@@ -48,7 +48,7 @@ public class GratitudeAndAffirmationsFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                int picNum = random.nextInt(30) + 1;
+                int picNum = random.nextInt(43) + 1;
                 final String pic = "a" + picNum;
                 ((ImageView) view.findViewById(R.id.affirmation)).setImageResource(getResources().getIdentifier(pic, "drawable", getActivity().getPackageName()));
                 Log.i("Image", pic);
