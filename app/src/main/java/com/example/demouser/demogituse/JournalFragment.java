@@ -45,7 +45,7 @@ public class JournalFragment extends Fragment {
                 new Observer<List<Record>>() {
                     @Override
                     public void onChanged(@Nullable List<Record> records) {
-                        Toast.makeText(getActivity().getApplicationContext(), records.indexOf(0), Toast.LENGTH_LONG);
+                        Toast.makeText(getActivity().getApplicationContext(), records.toString(), Toast.LENGTH_LONG);
                     }
                 });
 
@@ -67,7 +67,7 @@ public class JournalFragment extends Fragment {
 
                 record = new Record(jEntry.getText().toString());
                 recordRepository.insert(record);
-                Log.i("Record Data: ", record.getContent());
+                Log.i("Record Data: ", recordRepository.getRecords().toString());
 
             }
         });
