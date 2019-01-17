@@ -9,8 +9,12 @@
     <string name="greenJuicelink">https://youtu.be/OuLGnM0O2z8</string>
     <string name="selfCareGame">https://youfeellikeshit.com/</string>
     <string name="kendallGymLink">http://athletics.mtholyoke.edu/documents/kendalldropin.pdf</string>
-    <string name="link4">https://youtu.be/OuLGnM0O2z8</string>
-    <string name="link5">https://youtu.be/OuLGnM0O2z8</string>
+    <string name="sleepLink">https://www.youtube.com/watch?v=dqONk48l5vY</string>
+    <string name="mentalStretch">https://youtu.be/ce9pQ9-X7iA</string>
+    <string name="sleepSched">https://www.sleep.org/articles/get-sleep-schedule/</string>
+    <string name="nutritionLink">https://www.youtube.com/playlist?list=PLstmqf7jF1jbD7Sbcpfe600zJNTpIkh-y</string>
+    <string name="link">https://youtu.be/OuLGnM0O2z8</string>
+    <string name="linkk">https://youtu.be/OuLGnM0O2z8</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
