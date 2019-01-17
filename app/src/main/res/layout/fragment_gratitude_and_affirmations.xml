@@ -5,37 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".MainActivity">
-
-        <Button
-            android:id="@+id/gbutton1"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="264dp"
-            android:layout_marginEnd="8dp"
-            android:text="Save"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gratitudeEntry" />
-
-        <Button
-            android:id="@+id/gbutton2"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="264dp"
-            android:layout_marginEnd="8dp"
-            android:text="Save"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gratitudeEntry2" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/GandATitle"
@@ -44,45 +18,56 @@
             android:layout_marginTop="4dp"
             android:fontFamily="cursive"
             android:text="Gratitude and Affirmations"
+            android:textColor="@color/colorAccent"
             android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/gratitudeEntry"
-            android:layout_width="342dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Take a few moments to write down 3 wonderful things that happened today:"
             android:inputType="textCapSentences|textMultiLine"
             android:scrollHorizontally="false"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/GandATitle"
-            app:layout_constraintVertical_bias="0.147" />
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/gbutton1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
 
         <EditText
             android:id="@+id/gratitudeEntry2"
-            android:layout_width="339dp"
-            android:layout_height="85dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="64dp"
-            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:ems="10"
             android:hint="Express in writing your gratitude for the presence of a person dear to you:"
             android:inputType="textCapSentences|textMultiLine"
-            android:scrollHorizontally="false"
-            android:visibility="visible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gratitudeEntry" />
+            android:scrollHorizontally="false" />
+
+        <Button
+            android:id="@+id/gbutton2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/abutton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click for an affirmation!" />
+
+        <ImageView
+            android:id="@+id/affirmation"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY" />
 
 
-    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
 </ScrollView>
