@@ -1,6 +1,9 @@
 package com.example.demouser.demogituse;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -33,6 +36,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        displayFragment(new WelcomeFragment());
+
     }
 
     @Override
@@ -60,8 +65,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings)
-        {
+        if (id == R.id.action_settings) {
             return true;
         }
 
@@ -75,21 +79,16 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_home)
-        {
-
+        if (id == R.id.nav_home) {
+            displayFragment(new WelcomeFragment());
         }
-        else if (id == R.id.nav_info)
-        {
-
+        else if (id == R.id.nav_info) {
             displayFragment(new InfoFragment());
         }
-        else if (id == R.id.nav_checklist)
-        {
+        else if (id == R.id.nav_checklist) {
             displayFragment(new ChecklistFragment());
         }
-        else if (id == R.id.nav_journal)
-        {
+        else if (id == R.id.nav_journal) {
             displayFragment(new JournalFragment());
         }
         else if (id == R.id.nav_gratitudeAndAffirmations)
@@ -100,6 +99,12 @@ public class MainActivity extends AppCompatActivity
         {
             displayFragment(new ResourcesFragment());
         }
+        else if (id == R.id.nav_gratitudeAndAffirmations) {
+
+        }
+        else if (id == R.id.nav_resources) {
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -107,8 +112,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void displayFragment(Fragment fragment)
-    {
+    private void displayFragment(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame, fragment);
         fragmentTransaction.commit();
