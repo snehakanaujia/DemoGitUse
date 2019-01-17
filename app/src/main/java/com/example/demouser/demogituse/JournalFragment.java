@@ -28,7 +28,6 @@ import java.util.List;
 // */
 public class JournalFragment extends Fragment {
 
-    public List<String> journalRecord = new ArrayList<>();
     private Button saveButton;
     private EditText jEntry;
     private RecordDatabase recordDatabase;

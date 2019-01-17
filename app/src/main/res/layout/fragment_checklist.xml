@@ -17,6 +17,7 @@
         android:fontFamily="cursive"
         android:text="Checklist"
         android:textAlignment="center"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp" />
 
     <CheckBox
