@@ -46,6 +46,7 @@
             android:layout_marginTop="4dp"
             android:fontFamily="cursive"
             android:text="Journal"
+            android:textColor="@color/colorAccent"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

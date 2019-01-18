@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".ChecklistFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:id="@+id/checklistTitle"
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/EmotionalCheckBox"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="9dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="-72dp"
         android:text="Physical Health" />
 
@@ -72,11 +72,11 @@
 
     <TextView
         android:id="@+id/checklistDescrip"
-        android:layout_width="wrap_content"
+        android:layout_width="335dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="53dp"
         android:text="Checklists can help one stay more organized and make meaningful changes in a step by step manner." />
 
