@@ -18,12 +18,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="2dp"
             android:fontFamily="cursive"
             android:text="Welcome to the Resources Page!"
             android:textAlignment="center"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textSize="36sp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
@@ -31,9 +31,10 @@
             android:layout_width="358dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="2dp"
             android:layout_marginBottom="8dp"
-            android:text="Here, you can find various links to different pages for:\nnutrition, exercise, meditation, yoga, tips on how to be healthy and more."
+            android:text="Here, you can find various links to different pages for: nutrition, exercise, meditation, yoga, tips on how to be healthy and more."
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
 
         <TextView
@@ -42,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="11dp"
             android:text="Green Juice Detox:"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -59,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="11dp"
             android:text="Self Care Game:"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -76,6 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="11dp"
             android:text="Kendall Gym Schedule:"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -93,6 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="11dp"
             android:text="Sleep Health:"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -110,6 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="11dp"
             android:text="Stretches for mental clarity:"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -127,6 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="11dp"
             android:text="Tips for better sleep schedule:"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -144,6 +151,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="11dp"
             android:text="Nutrition Playlist: "
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
