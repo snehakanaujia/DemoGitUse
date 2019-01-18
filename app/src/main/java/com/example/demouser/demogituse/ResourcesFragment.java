@@ -30,7 +30,7 @@ public class ResourcesFragment extends Fragment
     {
         super.onCreate(savedInstanceState);
 
-        getActivity().setTitle("Resources Page");
+        getActivity().setTitle("M.H.C Health Application!");
 
     }
 

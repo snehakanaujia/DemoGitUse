@@ -112,12 +112,12 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="159dp"
-        android:layout_height="72dp"
+        android:layout_width="145dp"
+        android:layout_height="87dp"
         android:layout_alignBottom="@+id/imageView7"
         android:layout_alignParentStart="true"
         android:layout_marginStart="54dp"
-        android:layout_marginBottom="-34dp"
+        android:layout_marginBottom="-49dp"
         android:text="@string/journalicondescription" />
 
     <ImageView
@@ -125,20 +125,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView5"
-        android:layout_marginStart="-32dp"
-        android:layout_marginTop="-5dp"
+        android:layout_marginStart="-37dp"
+        android:layout_marginTop="-3dp"
         android:layout_toEndOf="@+id/imageView6"
         android:contentDescription="@string/gratitude_and_affirmations_icon"
         android:src="@drawable/baseline_thumb_up_black_18dp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="191dp"
-        android:layout_marginBottom="-58dp"
+        android:layout_width="167dp"
+        android:layout_height="91dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
         android:text="@string/gratitudeandaffirmationsicondescription" />
 
 </RelativeLayout>

@@ -14,6 +14,8 @@ public class WelcomeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        getActivity().setTitle("M.H.C Health Application!");
+
     }
 
     @Override

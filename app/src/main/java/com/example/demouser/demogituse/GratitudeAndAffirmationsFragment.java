@@ -35,7 +35,8 @@ public class GratitudeAndAffirmationsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle("Gratitude and Affirmations");
+
+        getActivity().setTitle("M.H.C Health Application!");
     }
 
     @Override

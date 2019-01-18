@@ -49,7 +49,7 @@ public class JournalFragment extends Fragment {
                     }
                 });
 
-        getActivity().setTitle("Journal");
+        getActivity().setTitle("M.H.C Health Application!");
 
     }
 

@@ -26,7 +26,7 @@ public class InfoFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getActivity().setTitle("Information Page");
+        getActivity().setTitle("M.H.C Health Application!");
         
     }
 
