@@ -16,21 +16,22 @@
     <string name="link">https://youtu.be/OuLGnM0O2z8</string>
     <string name="linkk">https://youtu.be/OuLGnM0O2z8</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
     <string name="physical">Physical</string>
-    <string name="this_is_some_information_about_physical_health_and_how_to_take_care_of_it">This is some information about physical health and how to take care of it</string>
+    <!--<string name="this_is_some_information_about_physical_health_and_how_to_take_care_of_it">This is some information about physical health and how to take care of it</string>-->
     <string name="emotional">Emotional</string>
     <string name="mental">Mental</string>
-    <string name="some_info_about_emotional_health_insert_insert_yadda_ydaa_good_stuff">Some Info. about Emotional health insert insert yadda ydaa good stuff</string>
+    <!--<string name="some_info_about_emotional_health_insert_insert_yadda_ydaa_good_stuff">Some Info. about Emotional health insert insert yadda ydaa good stuff</string>-->
     <string name="homeicondescription">Home is here! There\'s our welcome gif and a short description of the features in this app.</string>
-    <string name="resourcesicondescription">Resources contains links for you to explore the different ways of taking care of your health!</string>
-    <string name="infoicondescription">The Information page briefly describes the different kinds of health (by no means exhaustive)</string>
+    <string name="resourcesicondescription">The resources page contains links for you to explore the different ways of taking care of your health!</string>
+    <string name="infoicondescription">The information page briefly describes the different kinds of health (by no means exhaustive)</string>
     <string name="checklisticondescription">The checklist allows you to keep track of whether or not you\'ve worked on maintaining the different aspects of your health</string>
     <string name="journalicondescription">The journal serves as an emotional outlet and a resource to reflect on really anything you\'d like!</string>
+    <string name="gratitudeandaffirmationsicondescription">The gratitude and affirmations page allows you to feel thankful, more positive, and receive a lovely affirmation!</string>
     <string name="home_icon">home icon</string>
     <string name="info_icon">info icon</string>
     <string name="resource_icon">resource icon</string>
     <string name="checklist_icon">checklist icon</string>
     <string name="journal_icon">journal icon</string>
+    <string name="gratitude_and_affirmations_icon">gratitude and affirmations icon</string>
 </resources>

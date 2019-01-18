@@ -26,7 +26,7 @@
             android:title="Journal" />
         <item
             android:id="@+id/nav_gratitudeAndAffirmations"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/baseline_thumb_up_black_18dp"
             android:title="Gratitude and Affirmations" />
     </group>
 
