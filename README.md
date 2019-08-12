@@ -4,7 +4,7 @@ This is a mobile health application with features that can aid in recording heal
 (what aspects of your health did you focus on today), a journaling entry section (utilizes SQLite database to keep a record), 
 a gratitude entry and affirmations section, and a resources list for more health information.
 
-![Home](https://drive.google.com/open?id=1Y4RukvginS7_PNkHxPfhfrUVmkyzXN6u)
+![Home](https://github.com/snehakanaujia/MHCHealthAppliction/blob/master/Home.png)
 ![Info](https://drive.google.com/open?id=1kXXbjOk55yf6BLOnVOMDMoTjqsDxPLCP)
 ![Info2](https://drive.google.com/open?id=14cv0XYYhHHZEIlVBonzkQhl6uW_B8ImX)
 ![Resources](https://drive.google.com/open?id=1kDLwps3yZgGApDhw4Oyp0XqTqlmY8pPY)
